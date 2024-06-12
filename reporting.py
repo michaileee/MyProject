@@ -47,12 +47,13 @@ class Reporting:
         return audit_work_list
 
     def generate_report(self):
-        print("1. Audit_List_Report")
-        print("2. Choose_Audit_With_Auditor")
-        print("3. Audit_Plan_Report")
-        print("4. Audit_Work_Report")
+        
 
-        choice = input("Choose an option to generate report: ")
+        choice = input(""" 1. Audit_List_Report
+                           2. Choose_Audit_With_Auditor
+                           3. Audit_Plan_Report
+                           4. Audit_Work_Report
+                              Choose an option: """)
 
         if choice == '1':
             self.audit_list_report()
